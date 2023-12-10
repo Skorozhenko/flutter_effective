@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_effective/SubscriptionCards.dart';
 
 
 class Profile extends StatelessWidget {
@@ -6,6 +7,23 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('');
+    return SingleChildScrollView(
+      child: Container(
+        color: Colors.white,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              child: const Column(
+                children: [
+                  SubscriptionCards(), 
+                ],
+              )
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
