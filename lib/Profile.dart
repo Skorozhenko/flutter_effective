@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_effective/SubscriptionCards.dart';
 import 'package:flutter_effective/TariffsAndLimits.dart';
+import 'package:flutter_effective/Interests.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key}); 
@@ -19,6 +20,7 @@ class Profile extends StatelessWidget {
                 children: [
                   SubscriptionCards(), 
                   TariffsAndLimits(), 
+                  Interests()
                 ],
               )
             ),
