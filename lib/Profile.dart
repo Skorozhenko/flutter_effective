@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_effective/SubscriptionCards.dart';
-
+import 'package:flutter_effective/TariffsAndLimits.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key}); 
@@ -18,6 +18,7 @@ class Profile extends StatelessWidget {
               child: const Column(
                 children: [
                   SubscriptionCards(), 
+                  TariffsAndLimits(), 
                 ],
               )
             ),
